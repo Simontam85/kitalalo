@@ -1,0 +1,21 @@
+print("Gondolj egy számra 1 és 100 között")
+also = 0
+felso = 100
+while also != felso:
+    atlag = int((felso+also)/2)
+    beker = input(f"nagyobb vagy egyenlő mint {atlag}? i/n")
+    if beker == "i":
+        elozoA = also
+        also = atlag
+        print(also,felso)
+        if also == felso or elozoA == also:
+            print(f"a keresett szám a(z) {atlag}")
+            break
+    else:
+        elozoF = felso
+        felso = atlag
+        print(felso,also)
+        if also == felso or elozoF == felso:
+            print(f"a keresett szám a(z) {atlag}")
+            break
+
